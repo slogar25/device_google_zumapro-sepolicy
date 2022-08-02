@@ -1,3 +1,11 @@
+# GNSS
+BOARD_SEPOLICY_DIRS += \
+    device/google/gs-common/gps/lsi/sepolicy \
+    device/google/gs-common/gps/pixel/sepolicy
+
+# google_battery service
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
+
 # sepolicy that are shared among devices using zumapro
 BOARD_SEPOLICY_DIRS += device/google/zumapro-sepolicy/vendor
 BOARD_SEPOLICY_DIRS += device/google/zumapro-sepolicy/radio
