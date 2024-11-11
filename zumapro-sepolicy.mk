@@ -23,3 +23,13 @@ PRODUCT_PRIVATE_SEPOLICY_DIRS += device/google/zumapro-sepolicy/legacy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/google/zumapro-sepolicy/legacy/system_ext/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/zumapro-sepolicy/legacy/system_ext/private
 
+# GNSS
+BOARD_SEPOLICY_DIRS += \
+    device/google/gs-common/gps/lsi/sepolicy \
+    device/google/gs-common/gps/pixel/sepolicy
+
+# google_battery service
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
+
+# ConnectivityThermalPowerManager
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/connectivity_thermal_power_manager
